@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    <div class="sidebar">
+        <h2>EduLearn</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Assignments</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><button id="attendanceBtn">Attendance</button></li> <!-- Attendance Button -->
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>Dashboard</h2>
+            <div class="user-info">
+                <p>GEETH NADELLA - Student</p>
+            </div>
+        </header>
+
+        <section class="dashboard-overview">
+            <div class="announcement">
+                <h3>Announcements</h3>
+                <p>Hello Geeth, your live session is about to start!</p>
+                <button>Join</button>
+            </div>
+
+            <div class="leaderboard">
+                <h3>Leaderboard</h3>
+                <ul>
+                    <li>Niteesh - Score 60</li>
+                    <li>Sai  - Score 58</li>
+                    <li>Sharmi - Score 50</li>
+                </ul>
+            </div>
+
+            <div class="progress">
+                <h3>Completion Progress</h3>
+                <p>Organic Chemistry - Chapter 1</p>
+                <p>States of Matter - Chapter 2</p>
+            </div>
+        </section>
+
+        <!-- New Section for Attendance -->
+        <section id="attendance-section" style="display: none;"> <!-- Hidden by default -->
+            <h3>Attendance Overview</h3>
+            <canvas id="attendanceChart" width="400" height="200"></canvas> <!-- Graph -->
+            <div class="attendance-details">
+                <h4>Attendance Details</h4>
+                <p>Classes Attended: 24/30</p>
+                <p>Percentage: 80%</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
